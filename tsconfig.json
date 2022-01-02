@@ -1,0 +1,20 @@
+{
+    "compilerOptions":{
+        "strict":true,
+        "lib":["dom","ESNext"],
+        "target":"ESNext",
+        "esModuleInterop":true,
+        "baseUrl":".",
+        "moduleResolution":"node",
+        "types":[
+            "svelte"
+        ]
+    },
+    "include":[
+        "**/*.ts",
+        "**/*.d.ts"
+    ],
+    "exclude":[
+        "node_modules"
+    ]
+}

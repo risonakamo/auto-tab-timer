@@ -1,0 +1,6 @@
+{
+    "name":"auto-tab-timer",
+    "description":"randomised timer to perform tab actions",
+    "version":"1.0.0",
+    "manifest_version":3
+}
