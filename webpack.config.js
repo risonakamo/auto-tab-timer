@@ -7,7 +7,7 @@ const WebpackBar=require("webpackbar");
 module.exports={
     mode:"development",
     entry:{
-        index:"./pages/popup/index.ts"
+        popup:"./pages/popup/popup-index.ts"
     },
     output:{
         path:`${__dirname}/build`,
@@ -80,5 +80,5 @@ module.exports={
         // assets:false
     },
 
-    devtool:"eval-source-map"
+    devtool:"cheap-module-source-map"
 };
