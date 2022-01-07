@@ -8,7 +8,10 @@
         "moduleResolution":"node",
         "types":[
             "svelte"
-        ]
+        ],
+        "paths":{
+            "components/*":["web/components/*"]
+        }
     },
     "include":[
         "**/*.ts",
