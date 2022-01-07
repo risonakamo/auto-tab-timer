@@ -1,11 +1,13 @@
 {
-    "name":"auto-tab-timer",
+    "name":"Auto Tab Timer",
+    "short_name":"tabtimer",
     "description":"randomised timer to perform tab actions",
     "version":"1.0.0",
+    "homepage_url":"https://github.com/risonakamo/auto-tab-timer",
     "manifest_version":3,
 
     "action":{
         "default_title":"Auto Tab Timer",
-        "default_popup":"pages/popup/index.html"
+        "default_popup":"web/pages/popup/index.html"
     }
 }

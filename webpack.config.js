@@ -7,7 +7,7 @@ const WebpackBar=require("webpackbar");
 module.exports={
     mode:"development",
     entry:{
-        popup:"./pages/popup/popup-index.ts"
+        popup:"./web/pages/popup/popup-index.ts"
     },
     output:{
         path:`${__dirname}/build`,
