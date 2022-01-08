@@ -15,12 +15,18 @@
 
   <div class={cx("hide-timer-display",hideTimerDisplayClass)}>
     <div class="inner">
-      <span class="digits">00</span>
-      <span class="unit">h</span>
-      <span class="digits">22</span>
-      <span class="unit">m</span>
-      <span class="digits">05</span>
-      <span class="unit">s</span>
+      <div class="unit-block faded">
+        <span class="digits">00</span>
+        <span class="unit">h</span>
+      </div>
+      <div class="unit-block">
+        <span class="digits">22</span>
+        <span class="unit">m</span>
+      </div>
+      <div class="unit-block">
+        <span class="digits">05</span>
+        <span class="unit">s</span>
+      </div>
     </div>
   </div>
 

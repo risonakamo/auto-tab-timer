@@ -33,19 +33,29 @@
 
         .inner
         {
-            .digits
+            .unit-block
             {
-                color: @active-blue;
-                font-size: 24px;
-                font-weight: 500;
-                padding-right: 1px;
-            }
+                display: inline-block;
 
-            .unit
-            {
-                font-size: 14px;
-                font-weight: 500;
-                padding-right: 6px;
+                &.faded
+                {
+                    opacity: .45;
+                }
+
+                .digits
+                {
+                    color: @active-blue;
+                    font-size: 24px;
+                    font-weight: 500;
+                    padding-right: 1px;
+                }
+
+                .unit
+                {
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-right: 6px;
+                }
             }
         }
     }
