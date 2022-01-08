@@ -20,6 +20,57 @@
         margin-top: -1px;
         line-height: .9;
 
+        .inner
+        {
+            position: relative;
+            width: 180px;
+            height: 25px;
+
+            .timer-blocks
+            {
+                .unit-block
+                {
+                    display: inline-block;
+
+                    &.faded
+                    {
+                        opacity: .45;
+                    }
+
+                    .digits
+                    {
+                        color: @active-blue;
+                        font-size: 24px;
+                        font-weight: 500;
+                        padding-right: 1px;
+                    }
+
+                    .unit
+                    {
+                        font-size: 14px;
+                        font-weight: 500;
+                        padding-right: 6px;
+                    }
+                }
+            }
+
+            // not existing until hidden mode
+            .overlay-block
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                color: white;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                opacity: 0;
+                font-style: italic;
+            }
+        }
+
         &.hidden
         {
             background-color: @hide-black-blue;
@@ -27,34 +78,19 @@
 
             .inner
             {
-                opacity: 0;
-            }
-        }
-
-        .inner
-        {
-            .unit-block
-            {
-                display: inline-block;
-
-                &.faded
+                .timer-blocks
                 {
-                    opacity: .45;
+                    opacity: 0;
                 }
 
-                .digits
+                .overlay-block
                 {
-                    color: @active-blue;
-                    font-size: 24px;
-                    font-weight: 500;
-                    padding-right: 1px;
-                }
+                    display: flex;
 
-                .unit
-                {
-                    font-size: 14px;
-                    font-weight: 500;
-                    padding-right: 6px;
+                    &:hover
+                    {
+                        opacity: 0.7;
+                    }
                 }
             }
         }
