@@ -29,11 +29,15 @@
         <option value="tab2">tab2</option>
       </select>
 
-      <TimeInput/>
+      <div class="timer-inputs">
+        <TimeInput/>
 
-      <p class="time-input-divider">~</p>
+        <p class="time-input-divider">~</p>
 
-      <TimeInput/>
+        <TimeInput/>
+      </div>
+
+      <button>Add Timer</button>
     </div>
   </div>
 </div>
