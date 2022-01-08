@@ -1,4 +1,6 @@
 <script lang="ts">
+  import TimeInput from "components/time-input/time-input.svelte";
+
   import "./timer-create.less";
 </script>
 
@@ -26,6 +28,12 @@
         <option value="tab1">tab1</option>
         <option value="tab2">tab2</option>
       </select>
+
+      <TimeInput/>
+
+      <p class="time-input-divider">~</p>
+
+      <TimeInput/>
     </div>
   </div>
 </div>
