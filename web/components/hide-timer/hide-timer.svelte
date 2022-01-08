@@ -3,11 +3,7 @@
 
   import "./hide-timer.less";
 
-  const tempHiddenProp:boolean=false;
-
-  const hideTimerDisplayClass:Mapping={
-    hidden:tempHiddenProp
-  };
+  const tempHiddenProp:boolean=true;
 </script>
 
 <div class="hide-timer">
@@ -19,7 +15,7 @@
     </div>
 
     <div class="timer-display right-box">
-      <div class={cx("hide-timer-display",hideTimerDisplayClass)}>
+      <div class="hide-timer-display" class:hidden={tempHiddenProp}>
         <div class="inner">
           <div class="timer-blocks">
             <div class="unit-block faded">
