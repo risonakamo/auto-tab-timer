@@ -13,12 +13,12 @@
 <div class="hide-timer">
   <h1>Timer 1</h1>
 
-  <div class="timer-body">
-    <div class="count-border">
+  <div class="timer-body timer-box-body">
+    <div class="left-box">
       1
     </div>
 
-    <div class="timer-display">
+    <div class="timer-display right-box">
       <div class={cx("hide-timer-display",hideTimerDisplayClass)}>
         <div class="inner">
           <div class="timer-blocks">

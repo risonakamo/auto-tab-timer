@@ -11,7 +11,8 @@
             "classnames"
         ],
         "paths":{
-            "components/*":["web/components/*"]
+            "components/*":["web/components/*"],
+            "css/*":["web/css/*"]
         }
     },
     "include":[

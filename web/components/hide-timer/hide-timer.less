@@ -1,47 +1,16 @@
-@active-blue: #2b8dd8;
-@cancel-red: #e23757;
-@hide-black-blue: #0e131a;
-@count-border-grey: #b9b9b9;
-@count-border-text: #404040;
+@import "~css/timer-box-layout";
+@import "~css/colours";
 
 .hide-timer
 {
     margin-bottom: 8px;
-
-    h1
-    {
-        margin: 0;
-        font-size: 14px;
-        padding-left: 28px;
-    }
-
-    p
-    {
-        margin: 0;
-    }
+    width: 180px;
+    .timer-box-layout();
 
     .timer-body
     {
-        width: 180px;
-        display: flex;
-
-        .count-border
-        {
-            flex: 0 0 20px;
-            border-right: 2px solid @count-border-grey;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-            color: @count-border-text;
-            font-size: 14px;
-        }
-
         .timer-display
         {
-            flex: 1;
-            padding-left: 5px;
-
             .hide-timer-display
             {
                 line-height: .9;

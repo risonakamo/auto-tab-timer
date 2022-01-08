@@ -1,0 +1,44 @@
+// css to implement timer box layout. originating from hide-timer component
+
+@import "~css/colours";
+
+.timer-box-layout(
+    @left-box-width: 20px;
+)
+{
+    h1
+    {
+        margin: 0;
+        font-size: 14px;
+        padding-left: 28px;
+    }
+
+    p
+    {
+        margin: 0;
+    }
+
+    .timer-box-body
+    {
+        width: 100%;
+        display: flex;
+
+        .left-box
+        {
+            flex: 0 0 @left-box-width;
+            border-right: 2px solid @count-border-grey;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            color: @count-border-text;
+            font-size: 14px;
+        }
+
+        .right-box
+        {
+            flex: 1;
+            padding-left: 5px;
+        }
+    }
+}

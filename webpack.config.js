@@ -69,7 +69,8 @@ module.exports={
     resolve:{
         extensions:[".ts",".js",".svelte"],
         alias:{
-            components:`${__dirname}/web/components`
+            components:`${__dirname}/web/components`,
+            css:`${__dirname}/web/css`
         }
     },
 
