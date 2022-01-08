@@ -32,7 +32,7 @@
 
   <p class="action-info">
     ⭢ open
-    <a href="a" class="info-link">&lt;link&gt;</a>
+    <a href="a" class="info-link red">&lt;link&gt;</a>
   </p>
 
   <div class="cancel-zone">
