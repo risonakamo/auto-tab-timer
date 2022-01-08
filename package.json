@@ -4,7 +4,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
-    "watch-sv": "svelte-check --watch"
+    "sv-watch": "svelte-check --watch"
   },
   "dependencies": {
     "@babel/core": "^7.16.7",

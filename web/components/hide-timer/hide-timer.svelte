@@ -1,6 +1,4 @@
 <script lang="ts">
-  import cx,{Mapping} from "classnames";
-
   import "./hide-timer.less";
 
   const tempHiddenProp:boolean=true;
