@@ -2,14 +2,15 @@
   "name": "auto-tab-timer",
   "version": "1.0.0",
   "scripts": {
-    "watch":"webpack --watch",
-    "build":"webpack",
-    "watch-sv":"svelte-check --watch"
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "watch-sv": "svelte-check --watch"
   },
   "dependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "babel-loader": "^8.2.3",
+    "classnames": "^2.3.1",
     "css-loader": "^6.5.1",
     "fork-ts-checker-webpack-plugin": "^6.5.0",
     "less": "^4.1.2",

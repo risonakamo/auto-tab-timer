@@ -1,5 +1,6 @@
 @active-blue: #2b8dd8;
 @cancel-red: #e23757;
+@hide-black-blue: #0e131a;
 
 .hide-timer
 {
@@ -16,28 +17,43 @@
 
     .hide-timer-display
     {
-        margin-top: -5px;
+        margin-top: -1px;
+        line-height: .9;
 
-        .digits
+        &.hidden
         {
-            color: @active-blue;
-            font-size: 24px;
-            font-weight: 500;
-            padding-right: 1px;
+            background-color: @hide-black-blue;
+            cursor: pointer;
+
+            .inner
+            {
+                opacity: 0;
+            }
         }
 
-        .unit
+        .inner
         {
-            font-size: 14px;
-            font-weight: 500;
-            padding-right: 6px;
+            .digits
+            {
+                color: @active-blue;
+                font-size: 24px;
+                font-weight: 500;
+                padding-right: 1px;
+            }
+
+            .unit
+            {
+                font-size: 14px;
+                font-weight: 500;
+                padding-right: 6px;
+            }
         }
     }
 
     .action-info
     {
         font-size: 10px;
-        margin-top: -5px;
+        margin-top: -1px;
 
         .info-link
         {
@@ -48,7 +64,7 @@
 
     .cancel-zone
     {
-        margin-top: -2px;
+        margin-top: -3px;
 
         .cancel-button
         {
