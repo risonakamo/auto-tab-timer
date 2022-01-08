@@ -1,13 +1,18 @@
 @active-blue: #2b8dd8;
 @cancel-red: #e23757;
 @hide-black-blue: #0e131a;
+@count-border-grey: #b9b9b9;
+@count-border-text: #404040;
 
 .hide-timer
 {
+    margin-bottom: 8px;
+
     h1
     {
         margin: 0;
         font-size: 14px;
+        padding-left: 28px;
     }
 
     p
@@ -15,113 +20,136 @@
         margin: 0;
     }
 
-    .hide-timer-display
+    .timer-body
     {
-        margin-top: -1px;
-        line-height: .9;
+        width: 180px;
+        display: flex;
 
-        .inner
+        .count-border
         {
-            position: relative;
-            width: 180px;
-            height: 25px;
+            flex: 0 0 20px;
+            border-right: 2px solid @count-border-grey;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            color: @count-border-text;
+            font-size: 14px;
+        }
 
-            .timer-blocks
+        .timer-display
+        {
+            flex: 1;
+            padding-left: 5px;
+
+            .hide-timer-display
             {
-                .unit-block
+                line-height: .9;
+
+                .inner
                 {
-                    display: inline-block;
+                    position: relative;
+                    width: 100%;
+                    height: 25px;
 
-                    &.faded
+                    .timer-blocks
                     {
-                        opacity: .45;
+                        .unit-block
+                        {
+                            display: inline-block;
+
+                            &.faded
+                            {
+                                opacity: .45;
+                            }
+
+                            .digits
+                            {
+                                color: @active-blue;
+                                font-size: 24px;
+                                font-weight: 500;
+                                padding-right: 1px;
+                            }
+
+                            .unit
+                            {
+                                font-size: 14px;
+                                font-weight: 500;
+                                padding-right: 6px;
+                            }
+                        }
                     }
 
-                    .digits
+                    // not existing until hidden mode
+                    .overlay-block
                     {
-                        color: @active-blue;
-                        font-size: 24px;
-                        font-weight: 500;
-                        padding-right: 1px;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        color: white;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                        opacity: 0;
+                        font-style: italic;
                     }
+                }
 
-                    .unit
+                &.hidden
+                {
+                    background-color: @hide-black-blue;
+                    cursor: pointer;
+
+                    .inner
                     {
-                        font-size: 14px;
-                        font-weight: 500;
-                        padding-right: 6px;
+                        .timer-blocks
+                        {
+                            opacity: 0;
+                        }
+
+                        .overlay-block
+                        {
+                            display: flex;
+
+                            &:hover
+                            {
+                                opacity: 0.7;
+                            }
+                        }
                     }
                 }
             }
 
-            // not existing until hidden mode
-            .overlay-block
+            .action-info
             {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                color: white;
-                display: none;
-                justify-content: center;
-                align-items: center;
                 font-size: 10px;
-                opacity: 0;
-                font-style: italic;
-            }
-        }
+                margin-top: -1px;
 
-        &.hidden
-        {
-            background-color: @hide-black-blue;
-            cursor: pointer;
-
-            .inner
-            {
-                .timer-blocks
+                .info-link
                 {
-                    opacity: 0;
-                }
+                    color: @active-blue;
+                    cursor: default;
+                    opacity: .8;
 
-                .overlay-block
-                {
-                    display: flex;
-
-                    &:hover
+                    &.red
                     {
-                        opacity: 0.7;
+                        color: @cancel-red;
                     }
                 }
             }
-        }
-    }
 
-    .action-info
-    {
-        font-size: 10px;
-        margin-top: -1px;
-
-        .info-link
-        {
-            color: @active-blue;
-            cursor: default;
-            opacity: .8;
-
-            &.red
+            .cancel-zone
             {
-                color: @cancel-red;
+                margin-top: -3px;
+
+                .cancel-button
+                {
+                    font-size: 10px;
+                    color: @cancel-red;
+                }
             }
-        }
-    }
-
-    .cancel-zone
-    {
-        margin-top: -3px;
-
-        .cancel-button
-        {
-            font-size: 10px;
-            color: @cancel-red;
         }
     }
 }

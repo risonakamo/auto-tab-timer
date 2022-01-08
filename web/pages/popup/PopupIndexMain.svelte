@@ -5,3 +5,5 @@
 </script>
 
 <HideTimer/>
+<HideTimer/>
+<HideTimer/>
