@@ -8,7 +8,8 @@
         "moduleResolution":"node",
         "types":[
             "svelte",
-            "classnames"
+            "classnames",
+            "chrome"
         ],
         "paths":{
             "components/*":["web/components/*"],

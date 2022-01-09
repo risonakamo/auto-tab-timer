@@ -9,6 +9,7 @@
   "dependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@types/chrome": "^0.0.175",
     "babel-loader": "^8.2.3",
     "classnames": "^2.3.1",
     "css-loader": "^6.5.1",
@@ -16,6 +17,7 @@
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.4.5",
+    "nanoid": "^3.1.30",
     "svelte-check": "^2.2.11",
     "svelte-loader": "^3.1.2",
     "svelte-preprocess": "^4.10.1",
