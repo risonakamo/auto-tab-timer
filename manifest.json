@@ -6,9 +6,7 @@
     "homepage_url":"https://github.com/risonakamo/auto-tab-timer",
     "manifest_version":3,
 
-    "permissions":[
-        "storage"
-    ],
+    "permissions":["storage"],
 
     "action":{
         "default_title":"Auto Tab Timer",

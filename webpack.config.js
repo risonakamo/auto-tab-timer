@@ -71,7 +71,8 @@ module.exports={
         alias:{
             components:`${__dirname}/web/components`,
             css:`${__dirname}/web/css`,
-            apis:`${__dirname}/web/apis`
+            apis:`${__dirname}/web/apis`,
+            lib:`${__dirname}/web/lib`
         }
     },
 

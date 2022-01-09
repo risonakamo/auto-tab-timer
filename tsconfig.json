@@ -14,7 +14,8 @@
         "paths":{
             "components/*":["web/components/*"],
             "css/*":["web/css/*"],
-            "apis/*":["web/apis/*"]
+            "apis/*":["web/apis/*"],
+            "lib/*":["web/lib/*"],
         }
     },
     "include":[
